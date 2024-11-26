@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* max-width: 1200px; */
+    width: 50%;
+    height: auto;
+    padding:20px;
+    background-color: #fcf7f7;
+    border: 1px solid rgb(218, 212, 212);
+    margin: 20px auto;
+    border-radius: 10px;
+
+}
+.center-image{
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    margin-bottom: 10px;
+}
+.content h1{
+    font-size: 40px;
+}
+.content p{
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+ color: rgb(126, 122, 122);
+}
+.paragraph{
+    font-size: 24px;
+}
+.container-2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.section {
+    flex: 1; /* Each section takes up equal space */
+    text-align: center;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.sentence{
+    font-size: 20px;
+    
+}
+.footer {
+    display: flex;
+    justify-content: space-between; /* Spreads the two parts horizontally */
+    align-items: center; /* Vertically aligns items */
+    padding: 20px;
+    background-color: #333; /* Footer background color */
+    color: white;
+}
+
+.nav-links a,
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover,
+.social-icons a:hover {
+    text-decoration: underline; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; 
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 70%; 
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .paragraph {
+        font-size: 20px;
+    }
+
+    .sentence {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Full width for tablets */
+    }
+
+    .container-2 {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 20px; /* Increase gap for better readability */
+    }
+
+    .section img {
+        width: 100%; /* Ensure images fit within the screen */
+    }
+
+    .content h1 {
+        font-size: 28px; /* Smaller headings for mobile */
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .sentence {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column; /* Stack footer sections vertically */
+        text-align: center;
+        gap: 10px; /* Add spacing between sections */
+    }
+
+    .nav-links,
+    .social-icons {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+    }
+
+    .nav-links a,
+    .social-icons a {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+}
